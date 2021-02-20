@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import Faq from "./Faq";
+import HeaderButtons from "./components/HeaderButtons";
+import "./App.css";
 
 const Header = styled.div`
   background-color: white;
@@ -18,92 +19,39 @@ const Header = styled.div`
   }
 `;
 
-const Titulo = styled.div`
+const Container = styled.div`
+  flex-direction: row;
+  display: flex;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+    padding-left: 30px;
+  }
+`;
+
+const Title = styled.div`
   font-weight: 700;
   font-family: "Roboto Condensed";
   font-size: 3em;
 `;
 
-const Botão = styled.div`
-  cursor: pointer;
-  font-weight: bold;
-  padding: 10px 40px;
-  border: 1px solid black;
-  font-family: "Roboto Condensed";
-  color: #333;
-  &:hover {
-    background: #333;
-    color: white;
-  }
-  text-decoration: none;
-`;
-
-const BotãoGeral = styled.div`
-  flex-direction: row;
-  display: flex;
-  @media screen and (max-width: 800px) {
-    flex-direction: column;
-    text-align: center;
-  }
-`;
-
-class HeaderBotãos extends Component {
-  state = {
-    faq: false,
-  };
-
+export default class App extends Component {
   render() {
     return (
       <>
-        {this.state.faq ? <Faq /> : null}
-        <BotãoGeral>   
-        <div style={{ width: 10, height: 10 }} />
-          <a
-            style={{ textDecoration: "none" }}
-            target="_blank"
-            rel="noreferrer noopener"
-            href="https://twitter.com/lauraboemo"
-          >
-            <Botão>@lauraboemo</Botão>
-          </a>   
-          <div style={{ width: 10, height: 10 }} />
-          <Botão
-            onClick={() => {
-              this.setState((prevState) => ({
-                faq: !prevState.faq,
-              }));
-            }}
-          >
-            FAQ
-          </Botão>
-          <div style={{ width: 10, height: 10 }} />
-          <a
-            style={{ textDecoration: "none" }}
-            target="_blank"
-            rel="noreferrer noopener"
-            href="https://fernando.run"
-          >
-            <Botão>Companheiro de Guerra</Botão>
-          </a>   
-        </BotãoGeral>
+        <Container>
+          <Header>
+            <Title>LAURINHA JÁ CORREU HOJE?</Title>
+            <div style={{ flex: 1 }} />
+            <div style={{ height: 20 }} />
+            <HeaderButtons />
+            <div style={{ height: 20 }} />
+          </Header>
+        </Container>
       </>
     );
   }
 }
-
-class App extends Component {
-  render() {
-    return (
-      <Container>
-        <Header>
-          <Titulo>LAURINHA JÁ CORREU HOJE?</Titulo>
-          <div style={{ flex: 1 }} />
-          <div style={{ height: 20 }} />
-          <HeaderBotãos />
-          <div style={{ height: 20 }} />
-        </Header>
-      </Container>
-    );
-  }
-}
-export default App;
