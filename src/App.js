@@ -22,8 +22,6 @@ const Header = styled.div`
 const Container = styled.div`
   flex-direction: row;
   display: flex;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
   padding-top: 12px;
   padding-bottom: 12px;
   @media screen and (max-width: 800px) {

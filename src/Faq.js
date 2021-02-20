@@ -17,28 +17,19 @@ export default function Faq() {
       <FaqTitle>FAQ do Desafio</FaqTitle>
       <h3>Quais são as regras?</h3>
       <p>
-        Eu devo
-        <span style={{ borderBottom: "1px solid" }}>correr diariamente!</span>
-        Um dia começa e termina às 2 da manhã. A distância mínima é 2.5km
-        (aproxiadamente 13 minutos).
+        Eu devo <span style={{ borderBottom: "1px solid" }}>correr diariamente</span>! O código sempre inicializará o dia às 2a.m. e a distância mínima é 2.5km (aprox., 13 minutos).
       </p>
       <h3>Por que estou fazendo isso?</h3>
       <p>
-        Eu me senti extremamente sedentária após meu amigo
-        <a href="http://ferfazteusite">@Fernando</a>
-        julgar descaradamente aqueles que não praticam exercícios físicos.
-        Portanto, comecei a correr. Desde então, acumulei algumas corridas sem
-        faltar nenhum dia! Agora, não pretendo parar... isso seria profundamente
-        devastador (ao meu ego).
+        De trivela, meu amigo <a href="https://twitter.com/ferbelottodev">Fer</a> me chamou de sedentária. Agora corro... hehe
       </p>
       <h3>
-        E se for um dia realmente muito quente ou frio; ou se for feriado; ou se
-        eu estiver ferida; ou sem tempo; ou, até mesmo, doente?
+        E se o dia estiver quente ou frio demais, se for feriado, se eu estiver ferida, sem tempo ou, até mesmo, doente?
       </h3>
       <p>
-        <em>#RunEveryDayAnyWay</em>
+        <em>#LaurinhaRunEveryDayAnyWay</em>
       </p>
-      <h3>Pular algum dia?</h3>
+      <h3>Faltar algum dia?</h3>
       <p>Nunca.</p>
     </FaqStyled>
   );

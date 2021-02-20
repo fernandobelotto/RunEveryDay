@@ -42,7 +42,7 @@ export default class HeaderButtons extends Component {
             rel="noreferrer noopener"
             href="https://twitter.com/lauraboemo"
           >
-            <Button>@lauraboemo</Button>
+            <Button>@LauraBoemo</Button>
           </a>
           <div style={{ width: 10, height: 10 }} />
           <Button
@@ -59,9 +59,9 @@ export default class HeaderButtons extends Component {
             style={{ textDecoration: "none" }}
             target="_blank"
             rel="noreferrer noopener"
-            href="https://fernando.run"
+            href="https://twitter.com/ferbelottodev"
           >
-            <Button>Companheiro de Guerra</Button>
+            <Button>Companheiro de Batalha</Button>
           </a>
         </ButtonContainer>
       </>
