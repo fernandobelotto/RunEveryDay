@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import HeaderButtons from "./components/HeaderButtons";
-import './App.css'
+import "./App.css";
 
 const Header = styled.div`
   background-color: white;
@@ -41,15 +41,17 @@ const Title = styled.div`
 export default class App extends Component {
   render() {
     return (
-      <Container>
-        <Header>
-          <Title>LAURINHA JÁ CORREU HOJE?</Title>
-          <div style={{ flex: 1 }} />
-          <div style={{ height: 20 }} />
-          <HeaderButtons />
-          <div style={{ height: 20 }} />
-        </Header>
-      </Container>
+      <>
+        <Container>
+          <Header>
+            <Title>LAURINHA JÁ CORREU HOJE?</Title>
+            <div style={{ flex: 1 }} />
+            <div style={{ height: 20 }} />
+            <HeaderButtons />
+            <div style={{ height: 20 }} />
+          </Header>
+        </Container>
+      </>
     );
   }
 }
